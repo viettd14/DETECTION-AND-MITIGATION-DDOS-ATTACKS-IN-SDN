@@ -23,7 +23,7 @@ Pass: CuLy@944
 ```sh
 cd my_project/controller/
 ```
-** Step 2: Start Controller SDN **  
+**Step 2: Start Controller SDN**  
 In this directory, I have created multiple Controller files, each corresponding to different machine learning algorithms used for testing in various scenarios of detecting and mitigating DDoS attacks. Specifically:
 - DT_controller-detect.py: this file uses a Decision Tree algorithm so the system can detect DDoS attacks.
 - KNN_controller-detech.py: uses a K-Nearest Neighbors algorithm. algorithm so the system can detect DDoS attacks.
@@ -45,21 +45,22 @@ Controller detect & mitigation:
 DTree: ryu-manager DTree_Controller.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
 KNN:   ryu-manager KNN_Controller.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
 ```
-Step 3: Controller management site
+**Step 3: Controller management site**
 ```sh
 http://192.168.0.104:8080/home/index.html
 ```
 		
 ## 2. Mininet
-Step 1: Goto my project
+**Step 1: Goto my project**
 ```sh
 cd project/mininet
 ```
-Step 2: Start sflow service
+**Step 2: Start sflow service**
 ```sh
 sudo ./sflow/sflow-rt/start.sh
 ```
-After starting sflow, you should open another command line on linux to initialize mininet  
+After starting sflow, you should open another command line on linux to initialize mininet
+
 **Step 3: Start mininet**  
 Within the scope of my experiment, I created 2 mininet files in python3 language. Furthermore, I use the command in linux to create mininet virtual devices, details are as below:
 		- Topology 1: 12 hosts and 6 switches
