@@ -20,9 +20,9 @@ Pass: CuLy@944
 # II. Build SDN network system
 ## 1. Ryu Controller
 Step 1: Goto my project
-
-"cd my_project/controller/"
-
+```sh
+cd my_project/controller/
+```
 Step 2: Start Controller SDN
 In this directory, I have created multiple Controller files, each corresponding to different machine learning algorithms used for testing in various scenarios of detecting and mitigating DDoS attacks. Specifically:
 - DT_controller-detect.py: this file uses a Decision Tree algorithm so the system can detect DDoS attacks.
