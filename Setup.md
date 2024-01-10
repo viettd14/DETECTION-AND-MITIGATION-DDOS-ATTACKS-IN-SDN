@@ -19,7 +19,7 @@ Pass: CuLy@944
 
 # II. Build SDN network system
 ## 1. Ryu Controller
-** Step 1: Goto my project **
+**Step 1: Goto my project**
 ```sh
 cd my_project/controller/
 ```
