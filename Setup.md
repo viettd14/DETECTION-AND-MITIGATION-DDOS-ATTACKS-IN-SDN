@@ -1,4 +1,4 @@
-# I. Server administration information:
+# I. Server Administration Information:
 ## VMware:
 Product: VMware® Workstation 15 Pro  
 Version: 15.5.0 build-14665864  
@@ -17,7 +17,7 @@ User: Will
 Pass: CuLy@944
 
 
-# II. Build SDN network system
+# II. Build SDN System
 ## 1. Ryu Controller
 **Step 1: Goto my project**
 ```sh
@@ -88,7 +88,7 @@ http://192.168.0.100:8008/html/index.html#status
 http://192.168.0.100:8008/app/mininet-dashboard/html/index.html#charts
 ```
 
-# III. Demo
+# III. Attack DDOS
 Start the web on any host, here I use host 1 as the web server
 ```sh
 python -m SimpleHTTPServer 80
