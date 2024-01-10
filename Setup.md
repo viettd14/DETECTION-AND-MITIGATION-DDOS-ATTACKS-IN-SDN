@@ -17,26 +17,26 @@ User: Will
 Pass: CuLy@944
 
 
-II. Build SDN network system
-1. Ryu Controller
-	Step 1: Goto my project
-		cd my_project/controller/
-	Step 2: Start Controller SDN
-		In this directory, I have created multiple Controller files, each corresponding to different machine learning algorithms used for testing in various scenarios of detecting and mitigating DDoS attacks. Specifically:
-		- DT_controller-detect.py: this file uses a Decision Tree algorithm so the system can detect DDoS attacks.
-		- KNN_controller-detech.py: uses a K-Nearest Neighbors algorithm. algorithm so the system can detect DDoS attacks.
-		- RF_controller.py: uses a Randowm Forest algorithm. algorithm so the system can detect DDoS attacks.
-		- DTree_Controller.py: this file uses a Decision Tree algorithm so the system can detect and mitigate DDoS attacks.
-		- KNN_Controller.py: uses a K-Nearest Neighbors algorithm so the system can detect and mitigate DDoS attacks.
-		Controller normal (The controller operates normally and does not have an integrated attack detection and mitigation module):
-			ryu-manager ryu.app.simple_switch_13,ryu.app.ofctl_rest flowmanager/flowmanager.py    --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
-		Controller detect:
-			DTree: ryu-manager DT_controller-detect.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
-			KNN:   ryu-manager KNN_controller-detech.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
-		Controller detect & mitigation:
+# II. Build SDN network system
+## 1. Ryu Controller
+Step 1: Goto my project
+'cd my_project/controller/'
+Step 2: Start Controller SDN
+In this directory, I have created multiple Controller files, each corresponding to different machine learning algorithms used for testing in various scenarios of detecting and mitigating DDoS attacks. Specifically:
+- DT_controller-detect.py: this file uses a Decision Tree algorithm so the system can detect DDoS attacks.
+- KNN_controller-detech.py: uses a K-Nearest Neighbors algorithm. algorithm so the system can detect DDoS attacks.
+- RF_controller.py: uses a Randowm Forest algorithm. algorithm so the system can detect DDoS attacks.
+- DTree_Controller.py: this file uses a Decision Tree algorithm so the system can detect and mitigate DDoS attacks.
+- KNN_Controller.py: uses a K-Nearest Neighbors algorithm so the system can detect and mitigate DDoS attacks.
+Controller normal (The controller operates normally and does not have an integrated attack detection and mitigation module):
+'ryu-manager ryu.app.simple_switch_13,ryu.app.ofctl_rest flowmanager/flowmanager.py    --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080'
+Controller detect:
+'DTree: ryu-manager DT_controller-detect.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
+KNN:   ryu-manager KNN_controller-detech.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080'
+Controller detect & mitigation:
 			DTree: ryu-manager DTree_Controller.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
 			KNN:   ryu-manager KNN_Controller.py,ryu.app.ofctl_rest flowmanager/flowmanager.py  --observe-links --ofp-tcp-listen-port 6653 --wsapi-port 8080
-	Step 3: Controller management site
+Step 3: Controller management site
 		http://192.168.0.104:8080/home/index.html
 		
 2. Mininet
