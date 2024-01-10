@@ -63,22 +63,32 @@ After starting sflow, you should open another command line on linux to initializ
 
 **Step 3: Start mininet**  
 Within the scope of my experiment, I created 2 mininet files in python3 language. Furthermore, I use the command in linux to create mininet virtual devices, details are as below:
-		- Topology 1: 12 hosts and 6 switches
-			sudo mn --custom topology.py,sflow/sflow-rt/extras/sflow.py --link tc,bw=10 --controller=remote,ip=192.168.0.104:6653 --topo mytopo
-		- Topology 2: 6 hosts and 3 switches
-			sudo mn --custom topology2.py,sflow/sflow-rt/extras/sflow.py --controller=remote,ip=192.168.0.104:6653 --topo mytopo
-		- Topology commandline: Linux commandline
-			sudo mn -c && sudo mn --custom sflow/sflow-rt/extras/sflow.py --link tc,bw=10 --controller=remote,ip=192.168.0.104:6653 --topo tree,depth=2,fanout=2
-		Here, you only use 1 of 3 topologies to test the system.
-	Step 4: Make Mininet access Internet
-		I wrote a simple script to help mininet's virtualized devices access directly to the Internet. I use it to experiment with hosts inside the system attacking the Internet.
-			source /home/will/project/mininet/route-topology2.mn
-	Step 5: SDN infrastructure monitoring website
-		http://192.168.0.100:8008/html/index.html#status
-		http://192.168.0.100:8008/app/mininet-dashboard/html/index.html#charts
+- Topology 1: 12 hosts and 6 switches
+```sh
+sudo mn --custom topology.py,sflow/sflow-rt/extras/sflow.py --link tc,bw=10 --controller=remote,ip=192.168.0.104:6653 --topo mytopo
+```
+- Topology 2: 6 hosts and 3 switches
+```sh
+sudo mn --custom topology2.py,sflow/sflow-rt/extras/sflow.py --controller=remote,ip=192.168.0.104:6653 --topo mytopo
+```
+- Topology commandline: Linux commandline
+```sh
+sudo mn -c && sudo mn --custom sflow/sflow-rt/extras/sflow.py --link tc,bw=10 --controller=remote,ip=192.168.0.104:6653 --topo tree,depth=2,fanout=2
+```
+Here, you only use 1 of 3 topologies to test the system.
 
+**Step 4: Make Mininet access Internet**
+I wrote a simple script to help mininet's virtualized devices access directly to the Internet. I use it to experiment with hosts inside the system attacking the Internet.
+```sh
+source /home/will/project/mininet/route-topology2.mn
+```
+Step 5: SDN infrastructure monitoring website
+```sh
+http://192.168.0.100:8008/html/index.html#status
+http://192.168.0.100:8008/app/mininet-dashboard/html/index.html#charts
+```
 
-III. Demo
+# III. Demo
 	Start the web on any host, here I use host 1 as the web server
 		python -m SimpleHTTPServer 80
 	Test Web Server: using another host to request to host 1.
