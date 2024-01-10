@@ -21,7 +21,7 @@ Mininet:
 
 
 # II. Build SDN network system
-## 1. Ryu Controller
+##1. Ryu Controller
 	Step 1: Goto my project
 		cd my_project/controller/
 	Step 2: Start Controller SDN
@@ -42,7 +42,7 @@ Mininet:
 	Step 3: Controller management site
 		http://192.168.0.104:8080/home/index.html
 		
-## 2. Mininet
+##2. Mininet
 	Step 1: Goto my project
 		cd project/mininet
 	Step 2: Start sflow service
