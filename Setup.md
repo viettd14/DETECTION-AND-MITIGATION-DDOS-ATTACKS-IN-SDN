@@ -77,7 +77,7 @@ sudo mn -c && sudo mn --custom sflow/sflow-rt/extras/sflow.py --link tc,bw=10 --
 ```
 Here, you only use 1 of 3 topologies to test the system.
 
-**Step 4: Make Mininet access Internet**
+**Step 4: Make Mininet access Internet**  
 I wrote a simple script to help mininet's virtualized devices access directly to the Internet. I use it to experiment with hosts inside the system attacking the Internet.
 ```sh
 source /home/will/project/mininet/route-topology2.mn
