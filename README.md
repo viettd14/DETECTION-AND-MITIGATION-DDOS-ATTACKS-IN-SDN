@@ -1,15 +1,12 @@
 # I. Server administration information:
 ## VMware:
-Product: VMware® Workstation 15 Pro
-Version: 15.5.0 build-14665864
+Product: VMware® Workstation 15 Pro  
+Version: 15.5.0 build-14665864  
 ## Ryu Controller:
-Distributor ID: Ubuntu
-Description: Ubuntu 19.10
-Release: 19.10
-Codename: eoan
-IP: 192.168.0.104
-	User: ryu
-	Pass: ryu
+OS: Ubuntu 19.10 eoan  
+IP: 192.168.0.104  
+User: ryu  
+Pass: ryu  
 ## Mininet:		
 Distributor ID:	Ubuntu
 Description: Ubuntu 18.04.6 LTS
