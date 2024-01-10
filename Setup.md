@@ -50,14 +50,18 @@ Step 3: Controller management site
 http://192.168.0.104:8080/home/index.html
 ```
 		
-2. Mininet
-	Step 1: Goto my project
-		cd project/mininet
-	Step 2: Start sflow service
-		sudo ./sflow/sflow-rt/start.sh
-		After starting sflow, you should open another command line on linux to initialize mininet
-	Step 3: Start mininet
-		Within the scope of my experiment, I created 2 mininet files in python3 language. Furthermore, I use the command in linux to create mininet virtual devices, details are as below:
+## 2. Mininet
+Step 1: Goto my project
+```sh
+cd project/mininet
+```
+Step 2: Start sflow service
+```sh
+sudo ./sflow/sflow-rt/start.sh
+```
+After starting sflow, you should open another command line on linux to initialize mininet
+Step 3: Start mininet
+Within the scope of my experiment, I created 2 mininet files in python3 language. Furthermore, I use the command in linux to create mininet virtual devices, details are as below:
 		- Topology 1: 12 hosts and 6 switches
 			sudo mn --custom topology.py,sflow/sflow-rt/extras/sflow.py --link tc,bw=10 --controller=remote,ip=192.168.0.104:6653 --topo mytopo
 		- Topology 2: 6 hosts and 3 switches
