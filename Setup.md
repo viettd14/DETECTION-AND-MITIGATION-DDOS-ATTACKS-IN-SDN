@@ -59,8 +59,8 @@ Step 2: Start sflow service
 ```sh
 sudo ./sflow/sflow-rt/start.sh
 ```
-After starting sflow, you should open another command line on linux to initialize mininet
-Step 3: Start mininet
+After starting sflow, you should open another command line on linux to initialize mininet  
+Step 3: Start mininet  
 Within the scope of my experiment, I created 2 mininet files in python3 language. Furthermore, I use the command in linux to create mininet virtual devices, details are as below:
 		- Topology 1: 12 hosts and 6 switches
 			sudo mn --custom topology.py,sflow/sflow-rt/extras/sflow.py --link tc,bw=10 --controller=remote,ip=192.168.0.104:6653 --topo mytopo
