@@ -58,12 +58,15 @@ With the contributions from the related works, we propose a solution for detecti
 <a name="design-sdn-network-infrastructure"></a>
 
 ### Proposed Solution for DDoS Attack Prevention
-In this study, we propose a DDoS attack detection system in SDN network called uitSDNDDoSD. The uitSDNDDoSD system has a structure as shown in Figure 2. Our system comprises three main modules, as follows:
+In this study, we propose a DDoS attack detection system in SDN network called uitSDNDDoSD. Our system comprises three main modules, as follows:
 - Feature extraction from packets: When packets enter the system, we use the OpenFlow protocol to assist in extracting packet features such as IP, port, etc. Subsequently, these features are organized into flow tables and flow entries. Then, this information is sent to the detection module at the Controller after a specified time interval.
 - Attack detection module: We utilize machine learning algorithms to compare statistical information with the input dataset.
-• Mitigation module: After the comparison, if a dan gerous data network is identified, this module will implement mitigation policies to ensure system safety during an attack.
-![Proposed system operating mode](https://i.imgur.com/z00gHc0.png)
-*Figure 2: Proposed system architecture*  
+- Mitigation module: After the comparison, if a dan gerous data network is identified, this module will implement mitigation policies to ensure system safety during an attack.
+
+### Packet Processing In the OpenFlow Protocol
+With the characteristics of an SDN based on the separation of the control plane from the data plane. In the control plane, with the Controller as the brain of the entire system, can monitor, provide, and enforce policies to OF switches through the OpenFlow protocol [7] in a flexible manner. Packets are processed by the system on a per-flow basis and controlled in flow tables within OF switch through flow entries.  
+![Proposed system operating mode](https://i.imgur.com/fhldzcv.png)
+*Figure 2: Extracting packet features to matching flow tables*  
 
 
 
