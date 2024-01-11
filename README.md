@@ -75,6 +75,7 @@ With the characteristics of an SDN based on the separation of the control plane 
 <p align="center">
   <em>Figure 2: Extracting packet features to matching flow tables</em>
 </p>
+
 An OpenFlow protocol consists of three main components:
 - Flow: The OpenFlow protocol automatically groups new packets with the same attributes into a flow. These attributes are typically defined by the administrator, often based on layers in the OSI model such as Layer 4 (datagram), Layer 3 (packet), or Layer 2 (dataframe).
 - Flow Entry: Located at the switching devices, it performs matching based on information within a flow
