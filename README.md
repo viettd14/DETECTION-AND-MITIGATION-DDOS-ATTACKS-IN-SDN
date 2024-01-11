@@ -121,6 +121,19 @@ As shown in the example in Table 1, when a packet arrives in the system, the OF 
 
 *Table 1: An example of packet extraction and matching packet into flow entries within the flow table*
 
+### Attack Detection Module and Mitigation Module
+After receiving statistical information from the flow tables, the Attack Detection Module use the formulas outlined in section **statistical analysis**. Subsequently, it utilizes machine learning algorithms such as DT, KNN, RF, or SVM to compare the statistical results with the input dataset, predicting whether the traffic flow network is dangerous.  
+If the traffic flow is deemed normal, the packets continue to enter the system. However, if the traffic flow is predicted as dangerous, the information about that flow is forwarded to the Mitigation Module.  
+When a hazardous traffic flow is identified by the detection module, suppose the switch with switch-id-1 and port 1 is currently receiving this hazardous traffic flow. The Mitigation Module will send a request to the Controller to instruct switch-id-1 to remove the traffic flows coming from port 1. Simultaneously, the Mitigation Module sends continuous alerts to the administrator for system monitoring. After the attack flow concludes, approximately after 60s, the system will automatically re-establish the connection to port 1 to
+maintain system operation.
+The packet processing workflow of the system is detailed in Figure 4.  
+<p align="center">
+  <img src="https://i.imgur.com/thy997L.png" alt="The packet processing workflow of the system">
+</p>
+<p align="center">
+  <em>Figure 4: The packet processing workflow of the system</em>
+</p>
+
 
 ## System Performance Evaluation
 <a name="system-performance-evaluation"></a>
