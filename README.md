@@ -69,10 +69,13 @@ In this study, we propose a DDoS attack detection system in SDN network called u
 
 ### Packet Processing In the OpenFlow Protocol
 With the characteristics of an SDN based on the separation of the control plane from the data plane. In the control plane, with the Controller as the brain of the entire system, can monitor, provide, and enforce policies to OF switches through the OpenFlow protocol [7] in a flexible manner. Packets are processed by the system on a per-flow basis and controlled in flow tables within OF switch through flow entries.  
-<div align="center">
-![Extracting packet features to matching flow tables](https://i.imgur.com/fhldzcv.png)
-*Figure 2: Extracting packet features to matching flow tables*
-</div>
+<p align="center">
+  <img src="https://i.imgur.com/fhldzcv.png" alt="Extracting packet features to matching flow tables">
+</p>
+<p align="center">
+  <em>Figure 2: Extracting packet features to matching flow tables</em>
+</p>
+
 
 
 
