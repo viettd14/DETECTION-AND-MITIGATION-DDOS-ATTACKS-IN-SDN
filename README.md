@@ -7,9 +7,10 @@
 2. [Introduction](#introduction)
 3. [Related Work](#related-work)
 4. [Design SDN Network Infrastructure](#design-sdn-network-infrastructure)
-5. [System Performance Evaluation](#system-performance-evaluation)
-6. [Conclusion and Future Work](#conclusion-and-future-work)
-7. [References](#references)
+5. [A Proposed Design for SDN Infrastructure](#a-proposed-design-for-sdn-infrastructure)
+6. [System Performance Evaluation](#system-performance-evaluation)
+7. [Conclusion and Future Work](#conclusion-and-future-work)
+8. [References](#references)
 
 ## Abstract
 <a name="abstract"></a>
@@ -133,6 +134,11 @@ The packet processing workflow of the system is detailed in Figure 4.
 <p align="center">
   <em>Figure 4: The packet processing workflow of the system</em>
 </p>
+
+
+
+## A Proposed Design for SDN Infrastructure
+<a name="a-proposed-design-for-sdn-infrastructure"></a>
 
 
 ## System Performance Evaluation
