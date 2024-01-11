@@ -103,7 +103,7 @@ idle time, up to a maximum of 100 seconds.
 - Byte count: a counter for the packet size.
 
 <p align="center">
-  <img src="[img]https://i.imgur.com/Fi5BMLK.png" alt="Processing each flow table in the system">
+  <img src="https://i.imgur.com/Fi5BMLK.png" alt="Processing each flow table in the system">
 </p>
 <p align="center">
   <em>Figure 3: Processing each flow table in the system</em>
