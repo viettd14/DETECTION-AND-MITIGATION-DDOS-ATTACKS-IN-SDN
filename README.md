@@ -102,17 +102,13 @@ idle time, up to a maximum of 100 seconds.
 - Packet count: a counter for the number of packets.
 - Byte count: a counter for the packet size.
 
-As shown in the example in Table 1, when a packet arrives in the system, the OF Switch will extract the packet based on each destination IP to create a flow table. In this case, we extract packets with the destination IP: 10.0.0.1 into one flow table. The source IPs become flow entries within that flow table, and for each packet that needs to go through, a new flow entry is created, and the counters continue to increment.
-<p align="center">
+As shown in the example in Table 1, when a packet arrives in the system, the OF Switch will extract the packet based on each destination IP to create a flow table. In this case, we extract packets with the destination IP: 10.0.0.1 into one flow table. The source IPs become flow entries within that flow table, and for each packet that needs to go through, a new flow entry is created, and the counters continue to increment.  
 | Cột 1 Hàng 1 | Cột 2 | Cột 3| Cột 4 |
 |--------------|-------|------|-------|
 | Hàng 2 | 2 x 1 | 2 x 2 | 2 x 3 | 2 x 4 |
 | Hàng 3 | 3 x 1 | 3 x 2 | 3 x 3 | 3 x 4 |
 | Hàng 4 | 4 x 1 | 4 x 2 | 4 x 3 | 4 x 4 |
-</p>
-<p align="center">
-  <em>Table 1: An example of packet extraction and matching packet into flow entries within the flow table</em>
-</p>
+*Table 1: An example of packet extraction and matching packet into flow entries within the flow table*
 
 
 ## System Performance Evaluation
