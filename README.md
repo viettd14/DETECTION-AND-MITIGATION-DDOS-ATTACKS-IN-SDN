@@ -141,9 +141,8 @@ The packet processing workflow of the system is detailed in Figure 4.
 <a name="a-proposed-design-for-sdn-infrastructure"></a>
 
 To ensure the system’s effectiveness in detection and mitigation DDOS attacks, we propose a suitable design of an SDN Network system as depicted in Figure 5.  
-
 <p align="center">
-  <img src="https://i.imgur.com/Bar64di.png" alt="The proposed SDN network design">
+  <img width="800" src="https://i.imgur.com/Bar64di.png" alt="The proposed SDN network design">
 </p>
 <p align="center">
   <em>Figure 5: The proposed SDN network design</em>
