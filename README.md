@@ -57,7 +57,15 @@ With the contributions from the related works, we propose a solution for detecti
 ## Design SDN Network Infrastructure
 <a name="design-sdn-network-infrastructure"></a>
 
-...
+### Proposed Solution for DDoS Attack Prevention
+In this study, we propose a DDoS attack detection system in SDN network called uitSDNDDoSD. The uitSDNDDoSD system has a structure as shown in Figure 2. Our system comprises three main modules, as follows:
+- Feature extraction from packets: When packets enter the system, we use the OpenFlow protocol to assist in extracting packet features such as IP, port, etc. Subsequently, these features are organized into flow tables and flow entries. Then, this information is sent to the detection module at the Controller after a specified time interval.
+- Attack detection module: We utilize machine learning algorithms to compare statistical information with the input dataset.
+• Mitigation module: After the comparison, if a dan gerous data network is identified, this module will implement mitigation policies to ensure system safety during an attack.
+![Proposed system operating mode](https://i.imgur.com/z00gHc0.png)
+*Figure 2: Proposed system architecture*  
+
+
 
 ## System Performance Evaluation
 <a name="system-performance-evaluation"></a>
