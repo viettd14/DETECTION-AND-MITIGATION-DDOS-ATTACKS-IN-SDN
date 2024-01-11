@@ -80,11 +80,28 @@ An OpenFlow protocol consists of three main components:
 - Flow: The OpenFlow protocol automatically groups new packets with the same attributes into a flow. These attributes are typically defined by the administrator, often based on layers in the OSI model such as Layer 4 (datagram), Layer 3 (packet), or Layer 2 (dataframe).
 - Flow Entry: Located at the switching devices, it performs matching based on information within a flow
 (Figure 2).
-- Flow Table: OpenFlow manages flows and organizes them in a flow table to optimize the flow of traffic within the system.  
+- Flow Table: OpenFlow manages flows and organizes them in a flow table to optimize the flow of traffic within the system.
+
 Thus, the process of collecting flow traffic, detecting, and mitigating forms a closed loop from the Controller device to the switch devices and vice versa. These devices work continuously and synchronize data with each other seamlessly.
 
 ### Extracting Packet Features
+When a packet enters the system, the system will extract the packet features, specifically as follows (Figure 2):
+- Switch-id: information about which switch the packet originates from and which port.
+- IP source.
+- IP destination.
+- Port source.
+- Port destination.
+- Protocol (packet protocol): TCP, UDP, ICMP.
+- Byte: packet size.
 
+Based on the characteristics of DDoS attacks, attackers target a specific server or service, meaning the destination IP is clear, and the source of the attack is obscured by generating random source IPs. Thus, based on this attack DDoS characteristic, when a packet enters the system, the OF Switch devices will perform checks and extract distinctive features of the packet, such as source IP and destination IP.  
+For each flow, there will be additional counters:
+- Flow duration: the time a flow lasts, up to a maximum of 20 seconds.
+- Idle time: the waiting time of a flow, also known as
+idle time, up to a maximum of 100 seconds.
+- Packet count: a counter for the number of packets.
+- Byte count: a counter for the packet size.
+As shown in the example in Table 1, when a packet arrives in the system, the OF Switch will extract the packet based on each destination IP to create a flow table. In this case, we extract packets with the destination IP: 10.0.0.1 into one flow table. The source IPs become flow entries within that flow table, and for each packet that needs to go through, a new flow entry is created, and the counters continue to increment.
 
 ## System Performance Evaluation
 <a name="system-performance-evaluation"></a>
