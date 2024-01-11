@@ -101,6 +101,7 @@ For each flow, there will be additional counters:
 idle time, up to a maximum of 100 seconds.
 - Packet count: a counter for the number of packets.
 - Byte count: a counter for the packet size.
+
 As shown in the example in Table 1, when a packet arrives in the system, the OF Switch will extract the packet based on each destination IP to create a flow table. In this case, we extract packets with the destination IP: 10.0.0.1 into one flow table. The source IPs become flow entries within that flow table, and for each packet that needs to go through, a new flow entry is created, and the counters continue to increment.
 
 ## System Performance Evaluation
