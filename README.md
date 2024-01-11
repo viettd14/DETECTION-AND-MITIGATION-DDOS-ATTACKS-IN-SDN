@@ -103,7 +103,7 @@ idle time, up to a maximum of 100 seconds.
 - Byte count: a counter for the packet size.
 
 <p align="center">
-  <img src="https://i.imgur.com/Fi5BMLK.png" alt="Processing each flow table in the system">
+  <img src="[img]https://i.imgur.com/Fi5BMLK.png" alt="Processing each flow table in the system">
 </p>
 <p align="center">
   <em>Figure 3: Processing each flow table in the system</em>
@@ -128,7 +128,7 @@ When a hazardous traffic flow is identified by the detection module, suppose the
 maintain system operation.
 The packet processing workflow of the system is detailed in Figure 4.  
 <p align="center">
-  <img src="https://i.imgur.com/thy997L.png" alt="The packet processing workflow of the system">
+  <img src="https://i.imgur.com/EtBCyZt.png" alt="The packet processing workflow of the system">
 </p>
 <p align="center">
   <em>Figure 4: The packet processing workflow of the system</em>
