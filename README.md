@@ -71,7 +71,7 @@ In this study, we propose a DDoS attack detection system in SDN network called u
 ### Packet Processing In the OpenFlow Protocol
 With the characteristics of an SDN based on the separation of the control plane from the data plane. In the control plane, with the Controller as the brain of the entire system, can monitor, provide, and enforce policies to OF switches through the OpenFlow protocol [7] in a flexible manner. Packets are processed by the system on a per-flow basis and controlled in flow tables within OF switch through flow entries.  
 <p align="center">
-  <img width="600" src="https://i.imgur.com/fhldzcv.png" alt="Extracting packet features to matching flow tables">
+  <img width="500" src="https://i.imgur.com/fhldzcv.png" alt="Extracting packet features to matching flow tables">
 </p>
 <p align="center">
   <em>Figure 2: Extracting packet features to matching flow tables</em>
@@ -104,7 +104,7 @@ idle time, up to a maximum of 100 seconds.
 - Byte count: a counter for the packet size.
 
 <p align="center">
-  <img width="600" src="https://i.imgur.com/Fi5BMLK.png" alt="Processing each flow table in the system">
+  <img width="500" src="https://i.imgur.com/Fi5BMLK.png" alt="Processing each flow table in the system">
 </p>
 <p align="center">
   <em>Figure 3: Processing each flow table in the system</em>
@@ -129,7 +129,7 @@ When a hazardous traffic flow is identified by the detection module, suppose the
 maintain system operation.
 The packet processing workflow of the system is detailed in Figure 4.  
 <p align="center">
-  <img width="600" src="https://i.imgur.com/EtBCyZt.png" alt="The packet processing workflow of the system">
+  <img width="500" src="https://i.imgur.com/EtBCyZt.png" alt="The packet processing workflow of the system">
 </p>
 <p align="center">
   <em>Figure 4: The packet processing workflow of the system</em>
@@ -152,7 +152,7 @@ $$SFE = {Sumary(Flow Entry) \over T}$$
 
 To ensure the system’s effectiveness in detection and mitigation DDOS attacks, we propose a suitable design of an SDN Network system as depicted in Figure 5.  
 <p align="center">
-  <img width="600" src="https://i.imgur.com/Bar64di.png" alt="The proposed SDN network design">
+  <img width="500" src="https://i.imgur.com/Bar64di.png" alt="The proposed SDN network design">
 </p>
 <p align="center">
   <em>Figure 5: The proposed SDN network design</em>
