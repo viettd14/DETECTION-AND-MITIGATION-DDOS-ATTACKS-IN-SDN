@@ -139,6 +139,8 @@ The packet processing workflow of the system is detailed in Figure 4.
 The parameters used for statistical calculations are the values within the counters of the flow entries in the OF switch. For each time cycle T, the OF Switch devices will send flow entry information to the module on the Controller. The specific statistical information includes:
 - SIPS (Speed of IP Sources): Number of source IP addresses accessing the server.
 SIPS = \frac{Sumary(IP)}{T}
+
+
 - SPN (Source Port Number): The total number of source ports accessing the server.
 - PN (Packet Number): The number of packets in each flow table.
 - SFE (Speed of Flow Entries): The total number of flow entries in each flow table.
