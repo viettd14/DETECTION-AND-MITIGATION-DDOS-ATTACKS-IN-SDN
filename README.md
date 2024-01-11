@@ -102,6 +102,12 @@ idle time, up to a maximum of 100 seconds.
 - Packet count: a counter for the number of packets.
 - Byte count: a counter for the packet size.
 
+<p align="center">
+  <img src="https://i.imgur.com/Fi5BMLK.png" alt="Processing each flow table in the system">
+</p>
+<p align="center">
+  <em>Figure 3: Processing each flow table in the system</em>
+</p>
 In Figure 3, OpenFlow will continue to divide the extracted IP information into multiple flow tables, with each flow table corresponding to a destination IP, and source IPs will be placed into individual flow entries. If the number of destination IPs increases, the number of flow tables will also increase.  
 After being extracted packet and processed, for each periodic statistical interval (in our case, every 20 seconds), the OpenFlow Switch will send the information from these flow tables to the Controller device
 
