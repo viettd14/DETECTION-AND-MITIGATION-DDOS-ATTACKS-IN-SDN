@@ -140,6 +140,22 @@ The packet processing workflow of the system is detailed in Figure 4.
 ## A Proposed Design for SDN Infrastructure
 <a name="a-proposed-design-for-sdn-infrastructure"></a>
 
+To ensure the system’s effectiveness in detection and mitigation DDOS attacks, we propose a suitable design of an SDN Network system as depicted in Figure 5.  
+
+<p align="center">
+  <img src="https://i.imgur.com/Bar64di.png" alt="The proposed SDN network design">
+</p>
+<p align="center">
+  <em>Figure 5: The proposed SDN network design</em>
+</p>
+
+The network infrastructure is divided into three layers, following the standards of a SDN network infrastructure.
+- Control Layer: This layer is considered the brain of the entire system and contains the Controller device. The proposed attack prevention modules named uitSDNDDoSD, as outlined in section 3.4, will be directly integrated into the Controller. This module functions as a proxy to collect all network traffic flows from the OpenFlow protocol to serve statistical computation. Upon detecting an attack on the system, the module will notify the Controller, which, in turn, will instruct the OF Switch to discard malicious packets. For the purposes of this research, we utilize the RYU software to simulate a Controller device within the system.
+- Data Plane Layer: This layer houses network infrastructure devices such as servers and switches. The OpenFlow protocol is used to interconnect these devices. All activities related to traffic, packet forwarding, and control are managed by the Control Layer. In this study, the Mininet software is employed to simulate this network infrastructure layer.
+- Application Layer: This layer includes applications managing the network infrastructure, traffic processing policies, system security policies, and all these applications are installed, stored, and operated independently on one or more servers within the system. They are connected and controlled by the Controller through a Rest API. In this research, we only implement applications related to monitoring network infrastructure, such as monitoring the Controller’s resources and monitoring the system bandwidth for throughout the experimentation process, we will monitor and observe how the system is affected in terms of resource utilization. This approach allows us to conduct a comprehensive assessment of the system’s performance under various conditions.
+
+
+
 
 ## System Performance Evaluation
 <a name="system-performance-evaluation"></a>
