@@ -138,7 +138,7 @@ The packet processing workflow of the system is detailed in Figure 4.
 ### Statistical Method
 The parameters used for statistical calculations are the values within the counters of the flow entries in the OF switch. For each time cycle T, the OF Switch devices will send flow entry information to the module on the Controller. The specific statistical information includes:
 - SIPS (Speed of IP Sources): Number of source IP addresses accessing the server.
-$$ SIPS = { Sumary(IP) \ T } $$
+$$ g(x) = {\\frac{a}{1-a^2} }$$
 
 
 
