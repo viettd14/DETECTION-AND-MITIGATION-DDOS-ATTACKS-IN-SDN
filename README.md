@@ -29,15 +29,7 @@ Software-Defined Networking (SDN) is a networking technology that improves perfo
 DDoS is a highly dangerous type of attack on the Internet, as it causes system overload, resulting in slow or unresponsive system operations. In some cases, it can even block access to servers, denying legitimate users the ability to use system services. With the diversity of devices and the rapid development of network attack models over the past decades, the complexity of attacks has increased. Attackers continuously change their attack patterns to avoid detection, introducing anomalies in network traffic, or employing Low-Rate DDoS attacks (LR-DDOS). This complexity makes it challenging to detect and block each attack source. However, effective defense against these attacks requires quick detection and prevention to avoid system resources being overwhelmed.  
 Despite numerous research efforts and implemented measures to prevent these attacks. However, DDoS attacks are becoming increasingly diverse, posing significant difficulties and challenges. The complexity of algorithms has introduced certain delays in DDoS attack detection methods. Therefore, monitoring changes in access traffic patterns and timely, accurate identification of DDoS attacks are essential and urgent.  
 One optimized solution is the utilization of SDN network for the current network infrastructure. While SDN architecture has the potential to enhance security by centrally monitoring and controlling the network through the Controller device, facilitating easy configuration of network devices, it also presents a significant challenge. The very nature of SDN architecture makes it susceptible to becoming a target for DDoS attacks.  
-In my study, I propose an automated solution for detect and mitigation DDoS attacks in SDN network (Figure 1). This solution introduces a new, compact module that integrates directly into the SDN network's Controller device. This module operates as an Intrusion Detection System (IDS), monitoring all inbound and outbound traffic to the system to observe and predict potential attack risks.
-
-<p align="center">
-  <img width="600" src="https://i.imgur.com/36uOr4V.jpg" alt="Proposed system operating mode">
-</p>
-<p align="center">
-  <em>Figure 1: Proposed system operating mode</em>
-</p>
-
+In my study, I propose an automated solution for detect and mitigation DDoS attacks in SDN network. This solution introduces a new, compact module that integrates directly into the SDN network's Controller device. This module operates as an Intrusion Detection System (IDS), monitoring all inbound and outbound traffic to the system to observe and predict potential attack risks.  
 Within the system, the OpenFlow protocol is employed, where OpenFlow Switch devices analyze packet headers based on source IP, destination IP, port, switch, protocol, time, packet count, and send this information to the Controller for statistical analysis. Subsequently, the system is tested using machine learning models such as Decision Tree (DT), K-Nearest Neighbors (KNN), Random Forest (RF), and Support Vector Machine (SVM) to predict whether the incoming traffic to the system is normal or anomalous. The paper utilizes the CIC-DDOS2019 input dataset to evaluate machine learning algorithms in DDoS attack detection.  
 After proposing an attack prevention solutions, I suggests an appropriate Software-Defined Networking architecture for detecting and mitigating Distributed Denial of Service attacks.
 
@@ -56,8 +48,17 @@ With the contributions from the related works, we propose a solution for detecti
 - Build a module integrated directly into the Controller.
 - Function as an IDS system to monitor the entire system’s traffic.
 - Use the OpenFlow protocol to assist in extracting packet header for statistical methods.
-- Combine statistical methods with machine learning to predict attack traffic.
-
+- Combine statistical methods with machine learning to predict attack traffic.  
+A proposed system model for detecting intrusions by monitoring incoming packets into the system, with Input-Output details illustrated in Figure 1.  
+Input: Packets arriving at the system.  
+Output: If the packet is normal, it will be allowed to enter the system and proceed with processing. If the packet poses
+a DDoS attack risk, the system will implement mitigation measures and send alerts to users.  
+<p align="center">
+  <img width="600" src="https://i.imgur.com/36uOr4V.jpg" alt="Proposed system operating mode">
+</p>
+<p align="center">
+  <em>Figure 1: Proposed system operating mode</em>
+</p>
 
 ## Design SDN Network Infrastructure
 <a name="design-sdn-network-infrastructure"></a>
