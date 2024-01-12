@@ -32,7 +32,7 @@ One optimized solution is the utilization of SDN network for the current network
 In my study, I propose an automated solution for detect and mitigation DDoS attacks in SDN network (Figure 1). This solution introduces a new, compact module that integrates directly into the SDN network's Controller device. This module operates as an Intrusion Detection System (IDS), monitoring all inbound and outbound traffic to the system to observe and predict potential attack risks.
 
 <p align="center">
-  <img width="800" src="https://i.imgur.com/iY8LWZU.png" alt="Proposed system operating mode">
+  <img width="800" src="https://i.imgur.com/36uOr4V.jpg" alt="Proposed system operating mode">
 </p>
 <p align="center">
   <em>Figure 1: Proposed system operating mode</em>
