@@ -213,12 +213,12 @@ The features used in the CICDDOS2019 dataset for comparison with statistical met
 To evaluate accuracy, training time, and system resource consumption for each algorithm, aiming to identify the optimal algorithm for the system. We employed physical server hardware with the Windows Server 2019 operating system. Virtualization was achieved using VMWARE Workstation software to emulate Controller devices through RYU and Mininet software, with the goal of simulating a SDN Network infrastructure for system experimentation. Detailed system configuration information is provided in Table 2.
 
 | Hardware | Physical Server | Ryu Controller | Mininet |
-|----------|:----:|:-----:|:-----:|
-| OS | TP | FP |:-----:|
-| RAM | TN | FP |:-----:|
-| CPU | TN | FP |:-----:|
+|:--------:|:----:|:-----:|:-----:|
+| OS | Windown Server 2019 | Ubuntu 18.04 LTS |Ubuntu 18.04 Desktop|
+| RAM | 10GB | 4GB | 4GB |
+| CPU | Xeon(R) Gold 6240 @ 2.60GHz | 4vCPU | 4vCPU |
 
-*Table 2: The detailed system configuration*
+*Table 3: The detailed system configuration*
 
 
 ## Conclusion and Future Work
