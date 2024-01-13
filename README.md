@@ -130,7 +130,7 @@ When a hazardous traffic flow is identified by the detection module, suppose the
 maintain system operation.
 The packet processing workflow of the system is detailed in Figure 4.  
 <p align="center">
-  <img width="600" src="https://i.imgur.com/EtBCyZt.png" alt="The packet processing workflow of the system">
+  <img width="600" src="https://i.imgur.com/uTaFdFb.jpg" alt="The packet processing workflow of the system">
 </p>
 <p align="center">
   <em>Figure 4: The packet processing workflow of the system</em>
