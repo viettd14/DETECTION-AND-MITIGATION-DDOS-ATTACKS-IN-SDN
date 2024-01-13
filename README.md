@@ -175,7 +175,7 @@ $$Precision = {TP \over TP + FP}$$
 - Recall Rate: Recall measures the ratio of true positive predictions to the total actual positives.
 $$Recall = {TP \over 𝑇𝑃 + 𝐹𝑁}$$
 - F1-Score: which is the harmonic mean of Precision and Recall, providing a balanced measure.
-$$F1 = {TP \over TP + FP}$$
+$$F1 = {2 * 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 ∗ 𝑅𝑒𝑐𝑎𝑙𝑙 \over 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 + 𝑅𝑒𝑐𝑎𝑙𝑙}$$
 
 
 
