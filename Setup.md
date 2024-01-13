@@ -4,17 +4,11 @@ Product: VMware® Workstation 15 Pro
 Version: 15.5.0 build-14665864  
 ## Ryu Controller:
 OS: Ubuntu 19.10 eoan  
-IP: 192.168.0.104  
-User: ryu  
-Pass: ryu  
+IP: 192.168.0.104   
 ## Mininet:		
 Distributor ID:	Ubuntu
-Description: Ubuntu 18.04.6 LTS
-Release: 18.04
-Codename: bionic
+OS: Ubuntu 18.04.6 LTS
 IP:192.168.0.100
-User: Will
-Pass: CuLy@944
 
 
 # II. Build SDN System
@@ -129,8 +123,3 @@ DDoS Dataset:
 Controller: ryu-manager collect_ddos_trafic.py
 Mininet: sudo python3 generate_ddos_trafic.py
 ```
-
-# IV. My Project
-My project export by OVA file
-- Controller: https://uithcm-my.sharepoint.com/:f:/g/personal/viettd_14_ms_uit_edu_vn/EpKXbm8xnJVKtcIDmjIOYZkBf83SxJZcRXIFPhAfzsxvDA?e=c7nZeI
-- Mininet: https://uithcm-my.sharepoint.com/:f:/g/personal/viettd_14_ms_uit_edu_vn/Ekr7aeJ4wCFNiT1zZ89lepgBBQf-vuPJKmOEpWRC1kNe7Q?e=HpegcQ
