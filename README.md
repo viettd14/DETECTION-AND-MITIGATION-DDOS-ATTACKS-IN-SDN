@@ -251,7 +251,7 @@ To conduct the experiment, we will randomly select both an attacking server and 
 - Scenario 4: The Controller is subjected to a DDoS attack.
 
 `Scenario 1:` Our system is operating normally, and we conducted a ping test between hosts to check the stability of the system.  
-`Result:` At this stage, the system is functioning normally, and connections are stable.  
+`Scenario 1 Result:` At this stage, the system is functioning normally, and connections are stable.  
 The system continually monitors the incoming and outgoing packets, and after 20 seconds, it updates the status as either normal (Traffic is legitimate) or anomalous."
 
 <p align="center">
@@ -270,7 +270,7 @@ The system continually monitors the incoming and outgoing packets, and after 20 
   <em>Figure 9: Scenario 2</em>
 </p>
 
-`Result:` At this stage, the system is only integrated at the attack detection module, so when an attack occurs, the system is still affected as the Controller is overloaded during the attack. In Figure 11, the Controller has to handle over 900 packets per second, and the CPU usage peaks at nearly 90% to process the information.  
+`Scenario 2 Result:` At this stage, the system is only integrated at the attack detection module, so when an attack occurs, the system is still affected as the Controller is overloaded during the attack. In Figure 11, the Controller has to handle over 900 packets per second, and the CPU usage peaks at nearly 90% to process the information.  
 When traffic flows into the system, the OpenFlow protocol assists by collecting data flows from the switches and pushing the information to the detection module. Here, the module conducts statistical analysis based on the data provided by the switching devices. After conducting statistics for approximately 20s to 30s, the machine learning model predicts whether an attack is occurring. If yes, continuous alerts are sent to the administrator.
 
 <p align="center">
@@ -279,6 +279,20 @@ When traffic flows into the system, the OpenFlow protocol assists by collecting 
 <p align="center">
   <em>Figure 10: Scenario 2 Result</em>
 </p>
+
+`Scenario 3:` We integrate the attack mitigation module into the system.  
+Similar to scenario 2, when an attack occurs, the system can identify that it is under attack after approximately 20s to 30s. Subsequently, the system automatically initiates mitigation by identifying which devices in the system are under attack.  
+`Scenario 3 Result:` The system detected that the source of the attack originated from the device directly connected to port 2 of switch-id 3. Therefore, the Controller issued a command to this switch-id 3 device to close port number 2, thereby blocking all traffic from the attacking device.
+After the mitigation, the entire system’s traffic returned to normal, and the system resources stabilized. Following the conclusion of the attack, the system automatically reopened the connection after approximately 60s.
+
+<p align="center">
+  <img width="500" src="https://i.imgur.com/8WAcm1w.png" alt="Scenario 3 Result">
+</p>
+<p align="center">
+  <em>Figure 11: Scenario 3 Result</em>
+</p>
+
+
 
 
 
