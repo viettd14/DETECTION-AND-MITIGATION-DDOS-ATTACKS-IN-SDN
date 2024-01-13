@@ -3,21 +3,18 @@
 </div>
 
 # Table of Contents
-1. [Acknowledgement](#acknowledgement)
-2. [Abstract](#abstract)
-3. [Introduction](#introduction)
-4. [Related Work](#related-work)
-5. [Design SDN Network Infrastructure](#design-sdn-network-infrastructure)
-6. [A Proposed Design for SDN Infrastructure](#a-proposed-design-for-sdn-infrastructure)
-7. [System Performance Evaluation](#system-performance-evaluation)
-8. [Conclusion and Future Work](#conclusion-and-future-work)
-9. [Testing the Proposed System Against Attacks](#testing-the-proposed-system-against-attacks)
-10. [References](#references)
 
+1. [Abstract](#abstract)
+2. [Introduction](#introduction)
+3. [Related Work](#related-work)
+4. [Design SDN Network Infrastructure](#design-sdn-network-infrastructure)
+5. [A Proposed Design for SDN Infrastructure](#a-proposed-design-for-sdn-infrastructure)
+6. [System Performance Evaluation](#system-performance-evaluation)
+7. [Conclusion and Future Work](#conclusion-and-future-work)
+8. [Testing the Proposed System Against Attacks](#testing-the-proposed-system-against-attacks)
+9. [References](#references)
+10. [Acknowledgement](#acknowledgement)
 
-## Acknowledgement
-<a name="acknowledgement"></a>
-This research was supported by The VNUHCM-University of Information Technology’s Scientific Research Support Fund.
 
 ## Abstract
 <a name="abstract"></a>
@@ -362,3 +359,6 @@ To enhance and optimize the attack detection and mitigation model for improved a
 [9] PÉREZ-DÍAZ1, J.A., VALDOVINOS, I.A., KIM-KWANG RAYMOND CHOO 3, D.Z., 2020. Flexible sdn-based architecture for identifying and mitigating low-rate ddos attacks using machine learning. IEEE Access 8, 99. doi:10.1109/ACCESS.2020.3019330.
 
 
+## Acknowledgement
+<a name="acknowledgement"></a>
+This research was supported by The VNUHCM-University of Information Technology’s Scientific Research Support Fund.
