@@ -80,8 +80,7 @@ With the characteristics of an SDN based on the separation of the control plane 
 
 An OpenFlow protocol consists of three main components:
 - Flow: The OpenFlow protocol automatically groups new packets with the same attributes into a flow. These attributes are typically defined by the administrator, often based on layers in the OSI model such as Layer 4 (datagram), Layer 3 (packet), or Layer 2 (dataframe).
-- Flow Entry: Located at the switching devices, it performs matching based on information within a flow
-(Figure 2).
+- Flow Entry: Located at the switching devices, it performs matching based on information within a flow (Figure 2).
 - Flow Table: OpenFlow manages flows and organizes them in a flow table to optimize the flow of traffic within the system.
 
 Thus, the process of collecting flow traffic, detecting, and mitigating forms a closed loop from the Controller device to the switch devices and vice versa. These devices work continuously and synchronize data with each other seamlessly.
@@ -172,8 +171,11 @@ The network infrastructure is divided into three layers, following the standards
 
 The performance of our detection DDoS algorithm, we use metrics including Precision, Recall, and F1-Score with the following detailed parameters:
 - Precision: Precision measures the ratio of true positive predictions to the total predicted positives.
+$$Precision = {TP \over TP + FP}$$
 - Recall Rate: Recall measures the ratio of true positive predictions to the total actual positives.
+$$Recall = {TP \over 𝑇𝑃 + 𝐹𝑁}$$
 - F1-Score: which is the harmonic mean of Precision and Recall, providing a balanced measure.
+$$F1 = {TP \over TP + FP}$$
 
 
 
