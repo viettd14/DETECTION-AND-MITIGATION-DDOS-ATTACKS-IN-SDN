@@ -270,10 +270,15 @@ The system continually monitors the incoming and outgoing packets, and after 20 
   <em>Figure 9: Scenario 2</em>
 </p>
 
-`Result:` At this stage, the system is only integrated at the attack detection module, so when an attack occurs, the system is still affected as the Controller is overloaded during the attack. In Figure 11, the Controller has to handle over 900 packets per second, and the CPU usage peaks at nearly 90% to process the information.
+`Result:` At this stage, the system is only integrated at the attack detection module, so when an attack occurs, the system is still affected as the Controller is overloaded during the attack. In Figure 11, the Controller has to handle over 900 packets per second, and the CPU usage peaks at nearly 90% to process the information.  
 When traffic flows into the system, the OpenFlow protocol assists by collecting data flows from the switches and pushing the information to the detection module. Here, the module conducts statistical analysis based on the data provided by the switching devices. After conducting statistics for approximately 20s to 30s, the machine learning model predicts whether an attack is occurring. If yes, continuous alerts are sent to the administrator.
 
-
+<p align="center">
+  <img width="600" src="https://i.imgur.com/vFsnafg.png" alt="Scenario 2 Result">
+</p>
+<p align="center">
+  <em>Figure 9: Scenario 2 Result</em>
+</p>
 
 
 
