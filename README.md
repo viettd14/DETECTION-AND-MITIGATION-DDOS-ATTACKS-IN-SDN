@@ -167,6 +167,7 @@ The network infrastructure is divided into three layers, following the standards
 ## System Performance Evaluation
 <a name="system-performance-evaluation"></a>
 
+### Metrics
 The performance of our detection DDoS algorithm, we use metrics including Precision, Recall, and F1-Score with the following detailed parameters:
 - Precision: Precision measures the ratio of true positive predictions to the total predicted positives.
 $$Precision = {TP \over TP + FP}$$
@@ -179,6 +180,34 @@ $$F1 = {2 * 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 ∗ 𝑅𝑒𝑐𝑎𝑙𝑙 \o
 |-----------|:----:|:-----:|
 | Positives | TP | FP |
 | Negative | TN | FP |
+
+*Table 2: Algorithm metrics*
+
+###Dataset details
+We utilize the CICDDOS2019 dataset as the input for the learning system to recognize patterns in potentially dangerous traffic flows. Machine learning algorithms leverage the statistically derived outcomes to compare against the dataset, enabling the prediction of attack traffic.  
+"Dataset Information (Figure 6):
+- Attributes: 22 columns and approximately 5 billion rows.
+- Number of rows labeled ’1’ (DDOS): 49.01.
+- Number of rows labeled ’0’ (normal): 50.99.
+
+The features used in the CICDDOS2019 dataset for comparison with statistical methods are as follows:
+- Switch-id: Information about the switch from which the packet originates, including the associated port.
+- Ip source: Source IP address.
+- Ip destination: Destination IP address.
+- Port source.
+- Port destination.
+- Protocol (packet protocol): TCP, UDP, ICMP.
+- Flow duration: Duration of a flow, with a maximum of 20 seconds.
+- Idle time: Waiting time for a flow, also known as idle time, with a maximum of 100 seconds.
+- Packet count: Count of the number of packets.
+- Byte count: Count of the packet size in bytes.
+- Label: Indicates whether the packet is DDoS marked as ’1’ or normal marked as ’0’.
+<p align="center">
+  <img width="600" src="https://i.imgur.com/cq0etXH.png" alt="The proposed SDN network design">
+</p>
+<p align="center">
+  <em>Figure 6: Dataset details</em>
+</p>
 
 
 ## Conclusion and Future Work
