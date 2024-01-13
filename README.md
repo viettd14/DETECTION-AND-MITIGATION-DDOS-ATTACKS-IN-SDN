@@ -244,7 +244,17 @@ For the requirements of a network system, which demand quick processing and low 
 ## Testing the Proposed System Against Attacks
 <a name="testing-the-proposed-system-against-attacks"></a>
 
-...
+To conduct the experiment, we will randomly select both an attacking server and a target server. For the attacking server, we will use the flood attack technique to generate random source IPs. The execution process is divided into stages as outlined below:
+- Scenario 1: The system operates normally, without any attacks.
+- Scenario 2: The system experiences a denial-of-service attack, but the system only incorporates attack detection module.
+- Scenario 3: The system is under a denial-of-service attack, and the system is equipped with both detection module and mitigation module to minimize the impact of the attack.
+- Scenario 4: The Controller is subjected to a DDoS attack.
+
+`Scenario 1:` Our system is operating normally, and we conducted a ping test between hosts to check the stability of the system.  
+`Result:` At this stage, the system is functioning normally, and connections are stable.  
+The system continually monitors the incoming and outgoing packets, and after 20 seconds, it updates the status as either normal (Traffic is legitimate) or anomalous."
+
+
 
 ## Conclusion and Future Work
 <a name="conclusion-and-future-work"></a>
