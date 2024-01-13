@@ -233,7 +233,7 @@ For the requirements of a network system, which demand quick processing and low 
 *Table 4: The detailed system configuration*
 
 <p align="center">
-  <img width="1000" src="https://i.imgur.com/BRH9u2V.png" alt="Confusion matrix of the algorithm">
+  <img width="800" src="https://i.imgur.com/BRH9u2V.png" alt="Confusion matrix of the algorithm">
 </p>
 <p align="center">
   <em>Figure 7: Confusion matrix of the algorithm</em>
