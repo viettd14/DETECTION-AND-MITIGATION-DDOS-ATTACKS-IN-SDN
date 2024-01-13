@@ -170,7 +170,12 @@ The network infrastructure is divided into three layers, following the standards
 ## System Performance Evaluation
 <a name="system-performance-evaluation"></a>
 
-...
+The performance of our detection DDoS algorithm, we use metrics including Precision, Recall, and F1-Score with the following detailed parameters:
+- Precision: Precision measures the ratio of true positive predictions to the total predicted positives.
+- Recall Rate: Recall measures the ratio of true positive predictions to the total actual positives.
+- F1-Score: which is the harmonic mean of Precision and Recall, providing a balanced measure.
+
+
 
 ## Conclusion and Future Work
 <a name="conclusion-and-future-work"></a>
