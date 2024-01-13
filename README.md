@@ -203,7 +203,7 @@ The features used in the CICDDOS2019 dataset for comparison with statistical met
 - Byte count: Count of the packet size in bytes.
 - Label: Indicates whether the packet is DDoS marked as ’1’ or normal marked as ’0’.
 <p align="center">
-  <img width="600" src="https://i.imgur.com/cq0etXH.png" alt="The proposed SDN network design">
+  <img width="700" src="https://i.imgur.com/cq0etXH.png" alt="The proposed SDN network design">
 </p>
 <p align="center">
   <em>Figure 6: Dataset details</em>
