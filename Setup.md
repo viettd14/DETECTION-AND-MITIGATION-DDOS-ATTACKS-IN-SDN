@@ -129,3 +129,8 @@ DDoS Dataset:
 Controller: ryu-manager collect_ddos_trafic.py
 Mininet: sudo python3 generate_ddos_trafic.py
 ```
+
+# IV. My Project
+My project export by OVA file
+- Controller: https://uithcm-my.sharepoint.com/:f:/g/personal/viettd_14_ms_uit_edu_vn/EpKXbm8xnJVKtcIDmjIOYZkBf83SxJZcRXIFPhAfzsxvDA?e=c7nZeI
+- Mininet: https://uithcm-my.sharepoint.com/:f:/g/personal/viettd_14_ms_uit_edu_vn/Ekr7aeJ4wCFNiT1zZ89lepgBBQf-vuPJKmOEpWRC1kNe7Q?e=HpegcQ
