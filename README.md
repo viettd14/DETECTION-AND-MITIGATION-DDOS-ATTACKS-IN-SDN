@@ -162,8 +162,11 @@ The network infrastructure is divided into three layers, following the standards
 - Control Layer: This layer is considered the brain of the entire system and contains the Controller device. The proposed attack prevention modules named uitSDNDDoSD, as outlined in section 3.4, will be directly integrated into the Controller. This module functions as a proxy to collect all network traffic flows from the OpenFlow protocol to serve statistical computation. Upon detecting an attack on the system, the module will notify the Controller, which, in turn, will instruct the OF Switch to discard malicious packets. For the purposes of this research, we utilize the RYU software to simulate a Controller device within the system.
 - Data Plane Layer: This layer houses network infrastructure devices such as servers and switches. The OpenFlow protocol is used to interconnect these devices. All activities related to traffic, packet forwarding, and control are managed by the Control Layer. In this study, the Mininet software is employed to simulate this network infrastructure layer.
 - Application Layer: This layer includes applications managing the network infrastructure, traffic processing policies, system security policies, and all these applications are installed, stored, and operated independently on one or more servers within the system. They are connected and controlled by the Controller through a Rest API. In this research, we only implement applications related to monitoring network infrastructure, such as monitoring the Controller’s resources and monitoring the system bandwidth for throughout the experimentation process, we will monitor and observe how the system is affected in terms of resource utilization. This approach allows us to conduct a comprehensive assessment of the system’s performance under various conditions.
-
-
+| IN PORT | SWITCH ID | IP SRC | IP DST | 
+|---------|-----------|--------|--------|
+| 1 | 1 | 192.168.0.5 | 10.0.0.1 | TCP (6) | * | 80 | 1 |
+| 2 | 3 | 172.16.0.5 | 10.0.0.4 | UDP (17) | * | 22 | 2 |
+| 2 | 3 | 192.168.10.10 | 10.0.0.4 | UDP (17) | 30 | 665 | 3 |
 
 
 ## System Performance Evaluation
@@ -176,6 +179,7 @@ $$Precision = {TP \over TP + FP}$$
 $$Recall = {TP \over 𝑇𝑃 + 𝐹𝑁}$$
 - F1-Score: which is the harmonic mean of Precision and Recall, providing a balanced measure.
 $$F1 = {2 * 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 ∗ 𝑅𝑒𝑐𝑎𝑙𝑙 \over 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 + 𝑅𝑒𝑐𝑎𝑙𝑙}$$
+
 
 
 
