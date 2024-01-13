@@ -114,7 +114,7 @@ After being extracted packet and processed, for each periodic statistical interv
 
 As shown in the example in Table 1, when a packet arrives in the system, the OF Switch will extract the packet based on each destination IP to create a flow table. In this case, we extract packets with the destination IP: 10.0.0.1 into one flow table. The source IPs become flow entries within that flow table, and for each packet that needs to go through, a new flow entry is created, and the counters continue to increment.  
 | IN PORT | SWITCH ID | IP SRC | IP DST | PROTOCOL | SRC PORT | DST PORT | COUNTER PACKET |
-|---------|-----------|--------|--------|----------|----------|----------|----------------|
+|:-------:|:---------:|:------:|:------:|:--------:|:--------:|:--------:|:--------------:|
 | 1 | 1 | 192.168.0.5 | 10.0.0.1 | TCP (6) | * | 80 | 1 |
 | 2 | 3 | 172.16.0.5 | 10.0.0.4 | UDP (17) | * | 22 | 2 |
 | 2 | 3 | 192.168.10.10 | 10.0.0.4 | UDP (17) | 30 | 665 | 3 |
