@@ -203,7 +203,7 @@ The features used in the CICDDOS2019 dataset for comparison with statistical met
 - Byte count: Count of the packet size in bytes.
 - Label: Indicates whether the packet is DDoS marked as ’1’ or normal marked as ’0’.
 <p align="center">
-  <img width="700" src="https://i.imgur.com/cq0etXH.png" alt="The proposed SDN network design">
+  <img width="700" src="https://i.imgur.com/cq0etXH.png" alt="Dataset details">
 </p>
 <p align="center">
   <em>Figure 6: Dataset details</em>
@@ -224,13 +224,20 @@ As evident from the experimental results in Table 4, the decision tree algorithm
 For the requirements of a network system, which demand quick processing and low computational resource consumption, the decision tree proves to be well-suited for DDoS attack detection.
 
 | Algorithm | Precision (%) | Recall (%) | F1-Score (%) | Model Training Time (s) | CPU Usage (%) | RAM Usage (%)  |
-|-----------|:-------------:|:----------:|:------------:|:-----------------------:|:-------------:|:--------------:|
+|:---------:|:-------------:|:----------:|:------------:|:-----------------------:|:-------------:|:--------------:|
 | KNN | 97.65 | 98.04 | 97.84  | 78 | 51 | 80 
 | **DT** | **99.82** | **99.89** | **99.87** | **19** | **50** | **70** |
 | RF | 99.92 | 99.64 | 99.78 | 40 | 50 | 70 |
 | SVM | 87.30 | 88.23 | 87.77 | 3600 | 70 | 90 |
 
 *Table 4: The detailed system configuration*
+
+<p align="center">
+  <img width="700" src="https://i.imgur.com/BRH9u2V.png" alt="Confusion matrix of the algorithm">
+</p>
+<p align="center">
+  <em>Figure 7: Confusion matrix of the algorithm</em>
+</p>
 
 
 ## Conclusion and Future Work
