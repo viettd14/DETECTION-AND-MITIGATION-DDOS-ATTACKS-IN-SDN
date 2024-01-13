@@ -220,6 +220,17 @@ To evaluate accuracy, training time, and system resource consumption for each al
 
 *Table 3: The detailed system configuration*
 
+As evident from the experimental results in Table 4, the decision tree algorithm the highest accuracy among the algorithms we employed. In addition to its high accuracy, the decision tree exhibited the lowest model training time, processing speed, and resource consumption compared to other algorithms.  
+For the requirements of a network system, which demand quick processing and low computational resource consumption, the decision tree proves to be well-suited for DDoS attack detection.
+
+|           | True | False |           | True | False | False |
+|-----------|:----:|:-----:|           | True | False | False |
+| Positives | TP | FP |           | True | False | False |
+| Negative | TN | FP |           | True | False | False |
+| Negative | TN | FP |           | True | False | False |
+
+*Table 4: The detailed system configuration*
+
 
 ## Conclusion and Future Work
 <a name="conclusion-and-future-work"></a>
