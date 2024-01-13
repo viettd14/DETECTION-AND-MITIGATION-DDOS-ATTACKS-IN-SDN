@@ -316,7 +316,30 @@ After the mitigation, the entire system’s traffic returned to normal, and the 
 ## Conclusion and Future Work
 <a name="conclusion-and-future-work"></a>
 
-...
+### Conclusion
+Leveraging the fundamental principles of Software Defined Networking (SDN), we have put forward a solution to detect and mitigate DDoS attacks. This solution is implemented through a compact module designed for integration into existing systems, operating effectively as an Intrusion Detection System (IDS). Once the module is incorporated into the system, the Controller is capable of performing:
+- Detecting and mitigating DDoS attacks automatically.
+- If an attacker conducts port scanning with a high volume of traffic, the proposed system is designed to detect and prevent port scanning.
+- Based on the policy of Flow, the task of prevention and drop of attack packets will be carried out by the OF Switch devices.
+- Use packet features extractor from the OF Switch serves as statistical parameters for the DDoS attack detection solution.
+
+Because of directly utilizing statistical parameters from the OF Switch and, upon detecting an attack, the Controller will instruct the OF Switch to perform attack mitigation as well. Therefore, the system operates with low computational resources, enabling real-time monitoring and defense against attacks.  
+With both detection and mitigation centered on the OF Switch devices, this approach minimizes deployment costs as well as operational expenses. The entire solution is encapsulated within a compact module, seamlessly integrated directly into the Controller, without the need for additional devices for solution deployment.  
+During the system experimentation, the paper identified the Decision Tree machine learning algorithm as the most effective and optimal for the system. Throughout the training of the model and the detection process, the algorithm demonstrated the lowest system resource usage while achieving rapid detection of attacks.
+
+### Future Work
+To enhance and optimize the attack detection and mitigation model for improved and more accurate predictions:
+1. Train Additional Deep Learning Models:
+- Train and evaluate additional deep learning models to explore their potential effectiveness in enhancing the system’s capabilities.
+2. Cross-Validate Across Multiple Datasets:
+- Perform cross-validation on diverse datasets to ensure the robustness and generalization of the model across different scenarios.
+3. Integration with Other Tools:
+- Integrate the IDS-DDoS solution with other complementary tools to enhance overall reliability and effectiveness in handling a variety of cyber threats.
+4. Explore Superior Models:
+- Investigate and explore more advanced models that have the capability to identify tools and patterns beyond those present in the current dataset.
+
+
+
 
 ## References
 <a name="references"></a>
