@@ -175,11 +175,14 @@ $$Recall = {TP \over 𝑇𝑃 + 𝐹𝑁}$$
 - F1-Score: which is the harmonic mean of Precision and Recall, providing a balanced measure.
 $$F1 = {2 * 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 ∗ 𝑅𝑒𝑐𝑎𝑙𝑙 \over 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 + 𝑅𝑒𝑐𝑎𝑙𝑙}$$
 
-| Cột 1 Hàng 1 | Cột 2 | Cột 3| Cột 4 |
-|:------------:|:-----:|:----:|:-----:|
-| Hàng 2 | 2 x 1 | 2 x 2 | 2 x 3 | 2 x 4 |
-| Hàng 3 | 3 x 1 | 3 x 2 | 3 x 3 | 3 x 4 |
-| Hàng 4 | 4 x 1 | 4 x 2 | 4 x 3 | 4 x 4 |
+| Header 1 | Header 2 | Header 3 | Header 4 |
+|:--------:|:--------:|:--------:|:--------:|
+|   Row 1  |    A1    |    B1    |    C1    |
+|          |           |    B2    |    C2    |
+|          |           |    B3    |    C3    |
+|          |           |    B4    |    C4    |
+|          |           |    B5    |    C5    |
+
 
 
 
