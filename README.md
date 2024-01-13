@@ -175,13 +175,11 @@ $$Recall = {TP \over 𝑇𝑃 + 𝐹𝑁}$$
 - F1-Score: which is the harmonic mean of Precision and Recall, providing a balanced measure.
 $$F1 = {2 * 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 ∗ 𝑅𝑒𝑐𝑎𝑙𝑙 \over 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 + 𝑅𝑒𝑐𝑎𝑙𝑙}$$
 
-| Header 1 | Header 2 | Header 3 | Header 4 |
-|:--------:|:--------:|:--------:|:--------:|
-|   Row 1  |    A1    |    B1    |    C1    |
-|          |           |    B2    |    C2    |
-|          |           |    B3    |    C3    |
-|          |           |    B4    |    C4    |
-|          |           |    B5    |    C5    |
+|                  | Giá trị dự đoán |                 |
+|------------------|:----------------:|:---------------:|
+| **Giá trị thực tế** |     Âm tính      |     Dương tính    |
+| Gói tin bình thường |       TN         |        FP         |
+| Gói tin DDOS       |       FN         |        TP         
 
 
 
