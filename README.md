@@ -274,7 +274,7 @@ The system continually monitors the incoming and outgoing packets, and after 20 
 When traffic flows into the system, the OpenFlow protocol assists by collecting data flows from the switches and pushing the information to the detection module. Here, the module conducts statistical analysis based on the data provided by the switching devices. After conducting statistics for approximately 20s to 30s, the machine learning model predicts whether an attack is occurring. If yes, continuous alerts are sent to the administrator.
 
 <p align="center">
-  <img width="600" src="https://i.imgur.com/vFsnafg.png" alt="Scenario 2 Result">
+  <img width="500" src="https://i.imgur.com/vFsnafg.png" alt="Scenario 2 Result">
 </p>
 <p align="center">
   <em>Figure 9: Scenario 2 Result</em>
