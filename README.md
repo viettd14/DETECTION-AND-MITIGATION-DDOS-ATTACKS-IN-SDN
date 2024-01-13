@@ -163,11 +163,13 @@ The network infrastructure is divided into three layers, following the standards
 - Data Plane Layer: This layer houses network infrastructure devices such as servers and switches. The OpenFlow protocol is used to interconnect these devices. All activities related to traffic, packet forwarding, and control are managed by the Control Layer. In this study, the Mininet software is employed to simulate this network infrastructure layer.
 - Application Layer: This layer includes applications managing the network infrastructure, traffic processing policies, system security policies, and all these applications are installed, stored, and operated independently on one or more servers within the system. They are connected and controlled by the Controller through a Rest API. In this research, we only implement applications related to monitoring network infrastructure, such as monitoring the Controller’s resources and monitoring the system bandwidth for throughout the experimentation process, we will monitor and observe how the system is affected in terms of resource utilization. This approach allows us to conduct a comprehensive assessment of the system’s performance under various conditions.
 
-| IN PORT | SWITCH ID | IP SRC | IP DST | 
-|---------|-----------|--------|--------|
-| 1 | 1 | 192.168.0.5 | 10.0.0.1 |
-| 2 | 3 | 172.16.0.5 | 10.0.0.4 |
-| 2 | 3 | 192.168.10.10 | 10.0.0.4 |
+| Cột 1 Hàng 1 | Cột 2 | Cột 3| Cột 4 |
+|:------------:|:-----:|:----:|:-----:|
+| Hàng 2 | 2 x 1 | 2 x 2 | 2 x 3 | 2 x 4 |
+| Hàng 3 | 3 x 1 | 3 x 2 | 3 x 3 | 3 x 4 |
+| Hàng 4 | 4 x 1 | 4 x 2 | 4 x 3 | 4 x 4 |
+{: .center}
+
 
 
 ## System Performance Evaluation
