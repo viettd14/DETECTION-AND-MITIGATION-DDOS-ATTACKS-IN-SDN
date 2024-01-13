@@ -264,7 +264,7 @@ The system continually monitors the incoming and outgoing packets, and after 20 
 `Scenario 2:` We conducted an attack from server h1 to server h6 (Figure 10) using tools such as hping3, HOIC, LOIC, and slowloris.
 
 <p align="center">
-  <img width="500" src="https://i.imgur.com/CU7B6IC.png" alt="Scenario 2">
+  <img width="400" src="https://i.imgur.com/CU7B6IC.png" alt="Scenario 2">
 </p>
 <p align="center">
   <em>Figure 9: Scenario 2</em>
