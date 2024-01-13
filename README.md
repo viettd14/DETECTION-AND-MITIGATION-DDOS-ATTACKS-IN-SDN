@@ -277,8 +277,10 @@ When traffic flows into the system, the OpenFlow protocol assists by collecting 
   <img width="500" src="https://i.imgur.com/vFsnafg.png" alt="Scenario 2 Result">
 </p>
 <p align="center">
-  <em>Figure 9: Scenario 2 Result</em>
+  <em>Figure 10: Scenario 2 Result</em>
 </p>
+
+![Hình 1](https://i.imgur.com/vFsnafg.png) ![Hình 2](https://i.imgur.com/CU7B6IC.png)
 
 
 
