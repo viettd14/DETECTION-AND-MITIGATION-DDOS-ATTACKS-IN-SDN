@@ -5,9 +5,8 @@ Version: 15.5.0 build-14665864
 ## Ryu Controller:
 OS: Ubuntu 19.10 eoan  
 IP: 192.168.0.104   
-## Mininet:		
-Distributor ID:	Ubuntu
-OS: Ubuntu 18.04.6 LTS
+## Mininet:
+OS: Ubuntu 18.04.6 LTS  
 IP:192.168.0.100
 
 
