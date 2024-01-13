@@ -255,11 +255,27 @@ To conduct the experiment, we will randomly select both an attacking server and 
 The system continually monitors the incoming and outgoing packets, and after 20 seconds, it updates the status as either normal (Traffic is legitimate) or anomalous."
 
 <p align="center">
-  <img width="800" src="https://i.imgur.com/mypnU6b.png" alt="Scenario 1 Result">
+  <img width="900" src="https://i.imgur.com/mypnU6b.png" alt="Scenario 1 Result">
 </p>
 <p align="center">
   <em>Figure 8: Scenario 1 Result</em>
 </p>
+
+`Scenario 2:` We conducted an attack from server h1 to server h6 (Figure 10) using tools such as hping3, HOIC, LOIC, and slowloris.
+
+<p align="center">
+  <img width="900" src="https://i.imgur.com/CU7B6IC.png" alt="Scenario 2">
+</p>
+<p align="center">
+  <em>Figure 9: Scenario 2</em>
+</p>
+
+`Result:` At this stage, the system is only integrated at the attack detection module, so when an attack occurs, the system is still affected as the Controller is overloaded during the attack. In Figure 11, the Controller has to handle over 900 packets per second, and the CPU usage peaks at nearly 90% to process the information.
+When traffic flows into the system, the OpenFlow protocol assists by collecting data flows from the switches and pushing the information to the detection module. Here, the module conducts statistical analysis based on the data provided by the switching devices. After conducting statistics for approximately 20s to 30s, the machine learning model predicts whether an attack is occurring. If yes, continuous alerts are sent to the administrator.
+
+
+
+
 
 
 ## Conclusion and Future Work
