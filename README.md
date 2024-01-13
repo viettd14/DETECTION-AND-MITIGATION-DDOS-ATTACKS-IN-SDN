@@ -255,7 +255,7 @@ To conduct the experiment, we will randomly select both an attacking server and 
 The system continually monitors the incoming and outgoing packets, and after 20 seconds, it updates the status as either normal (Traffic is legitimate) or anomalous."
 
 <p align="center">
-  <img width="800" src="https://i.imgur.com/Ap66g99.png" alt="Scenario 1 Result">
+  <img width="800" src="https://i.imgur.com/mypnU6b.png" alt="Scenario 1 Result">
 </p>
 <p align="center">
   <em>Figure 8: Scenario 1 Result</em>
