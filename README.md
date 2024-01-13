@@ -292,7 +292,23 @@ After the mitigation, the entire system’s traffic returned to normal, and the 
   <em>Figure 11: Scenario 3 Result</em>
 </p>
 
+`Scenario 4:` In this scenario, we carried out an attack on the Controller from server h6.
 
+<p align="center">
+  <img width="400" src="https://i.imgur.com/n8W11Ki.png" alt="Scenario 4">
+</p>
+<p align="center">
+  <em>Figure 12: Scenario 4</em>
+</p>
+
+`Scenario 4 Result:` The system autonomously detected and mitigated the attack. Throughout the attack, the Controller remained operational in a normal and stable.
+
+<p align="center">
+  <img width="500" src="https://i.imgur.com/emh5I23.png" alt="Scenario 4 Result">
+</p>
+<p align="center">
+  <em>Figure 13: Scenario 4 Result</em>
+</p>
 
 
 
