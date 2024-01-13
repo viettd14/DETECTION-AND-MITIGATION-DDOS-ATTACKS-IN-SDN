@@ -1,0 +1,16 @@
+h1 ip route add default via 10.0.0.251
+h2 ip route add default via 10.0.0.251
+sh ip addr add 10.0.0.251/24 dev s1
+sh ip link set s1 up
+h3 ip route add default via 10.0.0.252
+h4 ip route add default via 10.0.0.252
+sh ip addr add 10.0.0.252/24 dev s2
+sh ip link set s2 up
+h5 ip route add default via 10.0.0.253
+h6 ip route add default via 10.0.0.253
+sh ip addr add 10.0.0.253/24 dev s3
+sh ip link set s3 up
+sh iptables -A FORWARD -i ens32 -s 10.0.0.0/24 -j ACCEPT
+sh iptables -A FORWARD -i ens32 -d 10.0.0.0/24 -j ACCEPT
+sh iptables -t nat -A POSTROUTING -o  ens32 -j MASQUERADE
+sh sysctl net.ipv4.ip_forward=1
