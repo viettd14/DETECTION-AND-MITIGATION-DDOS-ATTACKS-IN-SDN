@@ -54,7 +54,7 @@ Input: Packets arriving at the system.
 Output: If the packet is normal, it will be allowed to enter the system and proceed with processing. If the packet poses
 a DDoS attack risk, the system will implement mitigation measures and send alerts to users.  
 <p align="center">
-  <img width="600" src="https://i.imgur.com/36uOr4V.jpg" alt="Proposed system operating mode">
+  <img width="700" src="https://i.imgur.com/36uOr4V.jpg" alt="Proposed system operating mode">
 </p>
 <p align="center">
   <em>Figure 1: Proposed system operating mode</em>
@@ -183,7 +183,7 @@ $$F1 = {2 * 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 ∗ 𝑅𝑒𝑐𝑎𝑙𝑙 \o
 
 *Table 2: Algorithm metrics*
 
-###Dataset details
+### Dataset details
 We utilize the CICDDOS2019 dataset as the input for the learning system to recognize patterns in potentially dangerous traffic flows. Machine learning algorithms leverage the statistically derived outcomes to compare against the dataset, enabling the prediction of attack traffic.  
 "Dataset Information (Figure 6):
 - Attributes: 22 columns and approximately 5 billion rows.
@@ -208,6 +208,17 @@ The features used in the CICDDOS2019 dataset for comparison with statistical met
 <p align="center">
   <em>Figure 6: Dataset details</em>
 </p>
+
+### Algorithm Evaluation
+To evaluate accuracy, training time, and system resource consumption for each algorithm, aiming to identify the optimal algorithm for the system. We employed physical server hardware with the Windows Server 2019 operating system. Virtualization was achieved using VMWARE Workstation software to emulate Controller devices through RYU and Mininet software, with the goal of simulating a SDN Network infrastructure for system experimentation. Detailed system configuration information is provided in Table 2.
+
+| Hardware | Physical Server | Ryu Controller | Mininet |
+|----------|:----:|:-----:|:-----:|
+| OS | TP | FP |:-----:|
+| RAM | TN | FP |:-----:|
+| CPU | TN | FP |:-----:|
+
+*Table 2: The detailed system configuration*
 
 
 ## Conclusion and Future Work
