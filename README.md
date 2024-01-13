@@ -164,9 +164,9 @@ The network infrastructure is divided into three layers, following the standards
 - Application Layer: This layer includes applications managing the network infrastructure, traffic processing policies, system security policies, and all these applications are installed, stored, and operated independently on one or more servers within the system. They are connected and controlled by the Controller through a Rest API. In this research, we only implement applications related to monitoring network infrastructure, such as monitoring the Controller’s resources and monitoring the system bandwidth for throughout the experimentation process, we will monitor and observe how the system is affected in terms of resource utilization. This approach allows us to conduct a comprehensive assessment of the system’s performance under various conditions.
 | IN PORT | SWITCH ID | IP SRC | IP DST | 
 |---------|-----------|--------|--------|
-| 1 | 1 | 192.168.0.5 | 10.0.0.1 | TCP (6) | * | 80 | 1 |
-| 2 | 3 | 172.16.0.5 | 10.0.0.4 | UDP (17) | * | 22 | 2 |
-| 2 | 3 | 192.168.10.10 | 10.0.0.4 | UDP (17) | 30 | 665 | 3 |
+| 1 | 1 | 192.168.0.5 | 10.0.0.1 |
+| 2 | 3 | 172.16.0.5 | 10.0.0.4 |
+| 2 | 3 | 192.168.10.10 | 10.0.0.4 |
 
 
 ## System Performance Evaluation
