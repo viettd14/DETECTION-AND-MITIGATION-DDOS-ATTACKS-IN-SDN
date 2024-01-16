@@ -16,14 +16,14 @@
 10. [Acknowledgement](#acknowledgement)
 
 
-## Abstract
+# Abstract
 <a name="abstract"></a>
 
 The escalating risks to network security, stemming from the continual evolution of network infrastructure and application systems, have significantly impacted system availability, with Denial of Service (DDoS) attacks standing out as a particularly disruptive threat capable of overwhelming and even incapacitating systems. In response, this study introduces a comprehensive system designed to detect and mitigate DDoS attacks within Software-Defined Networks (SDNs). Our proposed solution involves a multi-modules architecture operating as an Intrusion Prevent System (IPS), strategically engineered for seamless integration into the Controller device. The system's functionality includes the periodic extraction of multiple parameters from flow entries on the OpenFlow switch, complemented by machine learning (ML) models, enabling the identification of abnormal packets infiltrating the system. Upon detecting an attack, the controller promptly dispatches policies to the OpenFlow switch, initiating the removal of malicious packets. This autonomous system employs common machine learning algorithms and real-time processes to detect and counteract attacks on OpenFlow Switches. The study evaluates the system’s performance using four distinct algorithms such as Decision Tree(DT), Random Forest (RF), K-Nearest Neighbors (KNN), and Support Vector Machine (SVM). The CIC-DDOS2019 input dataset [1] is used to evaluate machine learning algorithms in detecting DDoS attacks, experimental results show that the Decision Tree (DT) algorithm exhibits high F1 scores. highest with 99.87%.  
 
 
 
-## Introduction
+# Introduction
 <a name="introduction"></a>
 
 Software-Defined Networking (SDN) is a networking technology that improves performance and optimizes network management compared to traditional networks due to its highly flexible nature and rapid deployment capabilities. SDN allows centralized network management, empowering administrators to program network devices within the system. However, SDN has many potential information security risks, such as:
@@ -40,7 +40,7 @@ Within the system, the OpenFlow protocol is employed, where OpenFlow Switch devi
 After proposing an attack prevention solutions, I suggests an appropriate Software-Defined Networking architecture for detecting and mitigating Distributed Denial of Service attacks.
 
 
-## Related Work
+# Related Work
 <a name="related-work"></a>
 
 Currently, there have been numerous studies on detecting and mitigation DDoS attacks. Detection methods are commonly divided into four main categories: machine learning methods, methods that function as an Intrusion Detection System (IDS)/Intrusion Prevention System (IPS), methods using Entropy thresholds, and statistical methods:
@@ -66,7 +66,7 @@ a DDoS attack risk, the system will implement mitigation measures and send alert
   <em>Figure 1: Proposed system operating mode</em>
 </p>
 
-## Design SDN Network Infrastructure
+# Design SDN Network Infrastructure
 <a name="design-sdn-network-infrastructure"></a>
 
 ### Proposed Solution for DDoS Attack Prevention
@@ -75,7 +75,7 @@ In this study, we propose a DDoS attack detection system in SDN network called u
 - Attack detection module: We utilize machine learning algorithms to compare statistical information with the input dataset.
 - Mitigation module: After the comparison, if a dan gerous data network is identified, this module will implement mitigation policies to ensure system safety during an attack.
 
-### Packet Processing In the OpenFlow Protocol
+## Packet Processing In the OpenFlow Protocol
 With the characteristics of an SDN based on the separation of the control plane from the data plane. In the control plane, with the Controller as the brain of the entire system, can monitor, provide, and enforce policies to OF switches through the OpenFlow protocol [7] in a flexible manner. Packets are processed by the system on a per-flow basis and controlled in flow tables within OF switch through flow entries.  
 <p align="center">
   <img width="500" src="https://i.imgur.com/fhldzcv.png" alt="Extracting packet features to matching flow tables">
@@ -91,7 +91,7 @@ An OpenFlow protocol consists of three main components:
 
 Thus, the process of collecting flow traffic, detecting, and mitigating forms a closed loop from the Controller device to the switch devices and vice versa. These devices work continuously and synchronize data with each other seamlessly.
 
-### Extracting Packet Features
+## Extracting Packet Features
 When a packet enters the system, the system will extract the packet features, specifically as follows (Figure 2):
 - Switch-id: information about which switch the packet originates from and which port.
 - IP source.
@@ -153,7 +153,7 @@ $$SPN = {Sumary(PACKET) \over T}$$
 $$SFE = {Sumary(Flow Entry) \over T}$$
 
 
-## A Proposed Design for SDN Infrastructure
+# A Proposed Design for SDN Infrastructure
 <a name="a-proposed-design-for-sdn-infrastructure"></a>
 
 To ensure the system’s effectiveness in detection and mitigation DDOS attacks, we propose a suitable design of an SDN Network system as depicted in Figure 5.  
@@ -170,10 +170,10 @@ The network infrastructure is divided into three layers, following the standards
 - Application Layer: This layer includes applications managing the network infrastructure, traffic processing policies, system security policies, and all these applications are installed, stored, and operated independently on one or more servers within the system. They are connected and controlled by the Controller through a Rest API. In this research, we only implement applications related to monitoring network infrastructure, such as monitoring the Controller’s resources and monitoring the system bandwidth for throughout the experimentation process, we will monitor and observe how the system is affected in terms of resource utilization. This approach allows us to conduct a comprehensive assessment of the system’s performance under various conditions.
 
 
-## System Performance Evaluation
+# System Performance Evaluation
 <a name="system-performance-evaluation"></a>
 
-### Metrics
+## Metrics
 The performance of our detection DDoS algorithm, we use metrics including Precision, Recall, and F1-Score with the following detailed parameters:
 - Precision: Precision measures the ratio of true positive predictions to the total predicted positives.
 $$Precision = {TP \over TP + FP}$$
@@ -189,7 +189,7 @@ $$F1 = {2 * 𝑃𝑟𝑒𝑐𝑖𝑠𝑖𝑜𝑛 ∗ 𝑅𝑒𝑐𝑎𝑙𝑙 \o
 
 *Table 2: Algorithm metrics*
 
-### Dataset details
+## Dataset details
 We utilize the CICDDOS2019 dataset as the input for the learning system to recognize patterns in potentially dangerous traffic flows. Machine learning algorithms leverage the statistically derived outcomes to compare against the dataset, enabling the prediction of attack traffic.  
 "Dataset Information (Figure 6):
 - Attributes: 22 columns and approximately 5 billion rows.
@@ -215,7 +215,7 @@ The features used in the CICDDOS2019 dataset for comparison with statistical met
   <em>Figure 6: Dataset details</em>
 </p>
 
-### Algorithm Evaluation
+## Algorithm Evaluation
 To evaluate accuracy, training time, and system resource consumption for each algorithm, aiming to identify the optimal algorithm for the system. We employed physical server hardware with the Windows Server 2019 operating system. Virtualization was achieved using VMWARE Workstation software to emulate Controller devices through RYU and Mininet software, with the goal of simulating a SDN Network infrastructure for system experimentation. Detailed system configuration information is provided in Table 2.
 
 | Hardware | Physical Server | Ryu Controller | Mininet |
@@ -246,7 +246,7 @@ For the requirements of a network system, which demand quick processing and low 
 </p>
 
 
-## Testing the Proposed System Against Attacks
+# Testing the Proposed System Against Attacks
 <a name="testing-the-proposed-system-against-attacks"></a>
 
 To conduct the experiment, we will randomly select both an attacking server and a target server. For the attacking server, we will use the flood attack technique to generate random source IPs. The execution process is divided into stages as outlined below:
@@ -318,10 +318,10 @@ After the mitigation, the entire system’s traffic returned to normal, and the 
 
 
 
-## Conclusion and Future Work
+# Conclusion and Future Work
 <a name="conclusion-and-future-work"></a>
 
-### Conclusion
+## Conclusion
 Leveraging the fundamental principles of Software Defined Networking (SDN), we have put forward a solution to detect and mitigate DDoS attacks. This solution is implemented through a compact module designed for integration into existing systems, operating effectively as an Intrusion Detection System (IDS). Once the module is incorporated into the system, the Controller is capable of performing:
 - Detecting and mitigating DDoS attacks automatically.
 - If an attacker conducts port scanning with a high volume of traffic, the proposed system is designed to detect and prevent port scanning.
@@ -332,7 +332,7 @@ Because of directly utilizing statistical parameters from the OF Switch and, upo
 With both detection and mitigation centered on the OF Switch devices, this approach minimizes deployment costs as well as operational expenses. The entire solution is encapsulated within a compact module, seamlessly integrated directly into the Controller, without the need for additional devices for solution deployment.  
 During the system experimentation, the paper identified the Decision Tree machine learning algorithm as the most effective and optimal for the system. Throughout the training of the model and the detection process, the algorithm demonstrated the lowest system resource usage while achieving rapid detection of attacks.
 
-### Future Work
+## Future Work
 To enhance and optimize the attack detection and mitigation model for improved and more accurate predictions:
 1. Train Additional Deep Learning Models:
 - Train and evaluate additional deep learning models to explore their potential effectiveness in enhancing the system’s capabilities.
@@ -346,7 +346,7 @@ To enhance and optimize the attack detection and mitigation model for improved a
 
 
 
-## References
+# References
 <a name="references"></a>
 [1] Sharafaldin, I., Lashkari, A.H., Hakaka, S., Ghorbani, A.A., 2019. Developing realistic distributed denial of service (ddos) attack dataset and taxonomy. Digital Investigation.  
 [2] Doriguzzi-Corin, R., Millar, S., Scott-Hayward, S., del Rincón, J.M., Siracusa, D., 2020. Lucid: A practical, lightweight deep learning solution for ddos attack detection. IEEE Transactions on Network and Service Management 17, S876–S88.  
@@ -360,6 +360,6 @@ To enhance and optimize the attack detection and mitigation model for improved a
 [9] PÉREZ-DÍAZ1, J.A., VALDOVINOS, I.A., KIM-KWANG RAYMOND CHOO 3, D.Z., 2020. Flexible sdn-based architecture for identifying and mitigating low-rate ddos attacks using machine learning. IEEE Access 8, 99. doi:10.1109/ACCESS.2020.3019330.  
 
 
-## Acknowledgement
+# Acknowledgement
 <a name="acknowledgement"></a>
 This research was supported by The VNUHCM-University of Information Technology’s Scientific Research Support Fund.
