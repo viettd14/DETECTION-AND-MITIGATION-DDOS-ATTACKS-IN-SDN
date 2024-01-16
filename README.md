@@ -348,15 +348,16 @@ To enhance and optimize the attack detection and mitigation model for improved a
 
 ## References
 <a name="references"></a>
-[1] Sharafaldin, I., Lashkari, A.H., Hakaka, S., Ghorbani, A.A., 2019. Developing realistic distributed denial of service (ddos) attack dataset and taxonomy. Digital Investigation.
-[2] Doriguzzi-Corin, R., Millar, S., Scott-Hayward, S., del Rincón, J.M., Siracusa, D., 2020. Lucid: A practical, lightweight deep learning solution for ddos attack detection. IEEE Transactions on Network and Service Management 17, S876–S88.
-[3] Xiao, P., Qu, W., Qi, H., Li, Z., 2015. Detecting ddos attacks against data centers with correlation analysis. Computer Communications 67, 66–74. doi:https://doi.org/10.1016/j.comcom.2015.06.012.
-[4] Singh, S., Jayakumar, S.K.V., 2022. Ddos attack detection in sdn: Optimized deep convolutional neural network with optimal feature set. Wireless Personal Communications: An International Journal 125, 2781–2797. doi:https://doi.org/10.1007/s11277-022-09685-z.
-[5] Feinstein, Schnackenberg, 2003. Statistical approaches to ddos attack detection and response. DARPA Information Survivability Conference and Exposition 2, 303–314. doi:10.1109/DISCEX.2003.1194894.
-[6] Gebremeskel, T.G., Gemeda, K.A., Krishna, T.G., Ramulu, P.J., 2023. Ddos attack detection and classification using hybrid model for multicontroller sdn. Wireless Communications and Mobile Computing 2023, 1–18. doi:https://doi.org/10.1155/2023/9965945.
-[7] Wang, J., Wang, L., Wang, R., 2023. A method of ddos attack detection and mitigation for the comprehensive coordinated protection of sdn controllers. https://www.mdpi.com/1099-4300/25/8/1210 25. doi:https://doi.org/10.3390/e25081210.
-[8] Noe, M.Y.N., Vargas-Rosales, C., Pérez-Díaz, J.A., Carrera, D.F., 2022. A flexible sdn-based framework for slow-rate ddos attack mitigation by using deep reinforcement learning. Journal of Network and Computer Applications 205, 103444. doi:https://doi.org/10.1016/j.jnca.2022. 103444.
-[9] PÉREZ-DÍAZ1, J.A., VALDOVINOS, I.A., KIM-KWANG RAYMOND CHOO 3, D.Z., 2020. Flexible sdn-based architecture for identifying and mitigating low-rate ddos attacks using machine learning. IEEE Access 8, 99. doi:10.1109/ACCESS.2020.3019330.
+[1] Sharafaldin, I., Lashkari, A.H., Hakaka, S., Ghorbani, A.A., 2019. Developing realistic distributed denial of service (ddos) attack dataset and taxonomy. Digital Investigation.  
+[2] Doriguzzi-Corin, R., Millar, S., Scott-Hayward, S., del Rincón, J.M., Siracusa, D., 2020. Lucid: A practical, lightweight deep learning solution for ddos attack detection. IEEE Transactions on Network and Service Management 17, S876–S88.  
+[3] Xiao, P., Qu, W., Qi, H., Li, Z., 2015. Detecting ddos attacks against data centers with correlation analysis. Computer Communications 67, 66–74. doi:https://doi.org/10.1016/j.comcom.2015.06.012.  
+[4] Singh, S., Jayakumar, S.K.V., 2022. Ddos attack detection in sdn: Optimized deep convolutional neural network with optimal feature set. Wireless Personal Communications: An International Journal 125, 2781–2797. doi:https://doi.org/10.1007/s11277-022-09685-z.  
+[5] Feinstein, Schnackenberg, 2003. Statistical approaches to ddos attack detection and response. DARPA Information Survivability Conference and Exposition 2, 303–314. doi:10.1109/DISCEX.2003.1194894.  
+[6] Gebremeskel, T.G., Gemeda, K.A., Krishna, T.G., Ramulu, P.J., 2023. Ddos attack detection and classification using hybrid model for multicontroller sdn. Wireless Communications and Mobile Computing 2023, 1–18. doi:https://doi.org/10.1155/2023/9965945.  
+[7] Wang, J., Wang, L., Wang, R., 2023. A method of ddos attack detection and mitigation for the comprehensive coordinated protection of sdn controllers. https://www.mdpi.com/1099-4300/25/8/1210 25. doi:https://doi.org/10.3390/e25081210.  
+[8] Noe, M.Y.N., Vargas-Rosales, C., Pérez-Díaz, J.A., Carrera, D.F., 2022. A flexible sdn-based framework for slow-rate ddos attack mitigation by using deep reinforcement learning. Journal of Network and Computer Applications 205, 103444.
+ doi:https://doi.org/10.1016/j.jnca.2022. 103444.  
+[9] PÉREZ-DÍAZ1, J.A., VALDOVINOS, I.A., KIM-KWANG RAYMOND CHOO 3, D.Z., 2020. Flexible sdn-based architecture for identifying and mitigating low-rate ddos attacks using machine learning. IEEE Access 8, 99. doi:10.1109/ACCESS.2020.3019330.  
 
 
 ## Acknowledgement
